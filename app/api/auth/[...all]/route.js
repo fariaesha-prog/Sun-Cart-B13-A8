@@ -1,4 +1,13 @@
-import { auth } from "@/lib/auth";
-import { toNextJsHandler } from "better-auth/next-js";
+export async function GET() {
+  return new Response(JSON.stringify({ error: "Auth API not available" }), {
+    status: 501,
+    headers: { "content-type": "application/json" },
+  });
+}
 
-export const { GET, POST } = toNextJsHandler(auth);
+export async function POST() {
+  return new Response(JSON.stringify({ error: "Auth API not available" }), {
+    status: 501,
+    headers: { "content-type": "application/json" },
+  });
+}
