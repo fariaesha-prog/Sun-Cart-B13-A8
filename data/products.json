@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "name": "UV Protection Sunglasses",
+    "brand": "SunShade",
+    "price": 15,
+    "rating": 4.7,
+    "stock": 10,
+    "description": "Shield your eyes in style with our polarized UV400 sunglasses. Featuring a lightweight acetate frame and scratch-resistant lenses, these are the perfect companion for beach days, hikes, and city strolls. Blocks 100% of UVA and UVB rays.",
+    "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&q=80",
+    "category": "Accessories"
+  },
+  {
+    "id": 2,
+    "name": "SPF 50 Sunscreen Lotion",
+    "brand": "GlowLab",
+    "price": 22,
+    "rating": 4.8,
+    "stock": 25,
+    "description": "Lightweight, non-greasy SPF 50 broad-spectrum sunscreen that protects against UVA and UVB rays. Water-resistant for up to 80 minutes. Infused with aloe vera and vitamin E for extra skin nourishment. Dermatologist tested.",
+    "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500&q=80",
+    "category": "Skincare"
+  },
+  {
+    "id": 3,
+    "name": "Tropical Beach Dress",
+    "brand": "WaveVibes",
+    "price": 34,
+    "rating": 4.5,
+    "stock": 8,
+    "description": "Flow freely in this breezy tropical print dress made from 100% organic cotton. Features adjustable spaghetti straps, a relaxed fit, and a midi length perfect for the beach or boardwalk. Available in multiple vibrant prints.",
+    "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&q=80",
+    "category": "Outfits"
+  },
+  {
+    "id": 4,
+    "name": "Foldable Beach Umbrella",
+    "brand": "AquaCool",
+    "price": 45,
+    "rating": 4.6,
+    "stock": 5,
+    "description": "Stay cool and protected with this heavy-duty foldable beach umbrella. UV-coating blocks 95% of UV rays. Features a sand anchor base, tilt mechanism, and carry bag. Opens to 7 feet wide for maximum shade coverage.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&q=80",
+    "category": "Beach"
+  },
+  {
+    "id": 5,
+    "name": "Wide Brim Sun Hat",
+    "brand": "SunShade",
+    "price": 18,
+    "rating": 4.4,
+    "stock": 15,
+    "description": "Protect your face and neck from harsh summer sun with this stylish wide-brim hat. Crafted from natural straw with a moisture-wicking interior band. Packable and lightweight — perfect for travel. UPF 50+ protection.",
+    "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=500&q=80",
+    "category": "Accessories"
+  },
+  {
+    "id": 6,
+    "name": "Insulated Water Bottle",
+    "brand": "AquaCool",
+    "price": 28,
+    "rating": 4.9,
+    "stock": 20,
+    "description": "Keep your drinks ice-cold for 24 hours or hot for 12 with our double-wall vacuum insulated stainless steel bottle. BPA-free, leak-proof lid, and fits most cup holders. Available in 500ml and 1L sizes.",
+    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&q=80",
+    "category": "Hydration"
+  }
+   {
+    "id": 7,
+    "name": "Aloe Vera Gel Moisturizer",
+    "brand": "SkinPure",
+    "price": 16,
+    "rating": 4.6,
+    "stock": 18,
+    "description": "A soothing aloe vera gel moisturizer that hydrates and calms sun-exposed skin. Lightweight formula absorbs quickly without leaving a sticky residue. Perfect for daily skincare and after-sun care.",
+    "image": "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=500&q=80",
+    "category": "Skincare"
+  },
+  {
+    "id": 8,
+    "name": "Summer Linen Shirt",
+    "brand": "BreezeWear",
+    "price": 26,
+    "rating": 4.5,
+    "stock": 12,
+    "description": "Stay cool and stylish with this breathable linen shirt. Designed with a relaxed fit and soft fabric, making it perfect for hot summer days. Easy to pair with shorts or jeans.",
+    "image": "https://images.unsplash.com/photo-1520975916090-3105956dac38?w=500&q=80",
+    "category": "Outfits"
+  },
+  {
+    "id": 9,
+    "name": "Beach Flip Flops",
+    "brand": "WaveStep",
+    "price": 14,
+    "rating": 4.3,
+    "stock": 30,
+    "description": "Comfortable and durable flip flops designed for beach and casual wear. Features a soft sole and anti-slip grip for maximum comfort during long summer walks.",
+    "image": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=500&q=80",
+    "category": "Beach"
+  },
+  {
+    "id": 10,
+    "name": "Minimalist Gold Necklace",
+    "brand": "GlowCharm",
+    "price": 20,
+    "rating": 4.7,
+    "stock": 14,
+    "description": "A simple yet elegant gold-plated necklace that adds a subtle shine to any outfit. Lightweight and perfect for everyday wear or layering with other accessories.",
+    "image": "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=500&q=80",
+    "category": "Accessories"
+  },
+  {
+    "id": 11,
+    "name": "Electrolyte Drink Mix",
+    "brand": "HydraBoost",
+    "price": 12,
+    "rating": 4.6,
+    "stock": 22,
+    "description": "Stay hydrated with this refreshing electrolyte drink mix. Packed with essential minerals to replenish your body after workouts or long days in the sun. Just mix with water and enjoy.",
+    "image": "https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?w=500&q=80",
+    "category": "Hydration"
+  }
+]
