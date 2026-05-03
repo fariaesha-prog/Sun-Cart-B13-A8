@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  --sun-orange: #D85A30;
+  --sun-amber: #EF9F27;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #fafaf8;
+  color: #1a1a18;
+}
+
+.card-sun {
+  background: white;
+  border: 0.5px solid #e8e6df;
+  border-radius: 16px;
+  transition: all 0.25s ease;
+}
+.card-sun:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(216, 90, 48, 0.12);
+  border-color: #F0997B;
+}
+
+.input-sun {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid #e0ddd6;
+  border-radius: 10px;
+  font-size: 14px;
+  background: white;
+  outline: none;
+  color: #1a1a18;
+  font-family: 'DM Sans', sans-serif;
+}
+.input-sun:focus {
+  border-color: #D85A30;
+  box-shadow: 0 0 0 3px rgba(216, 90, 48, 0.08);
+}
+
+.slider-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #EF9F27;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.slider-dot.active {
+  opacity: 1;
+  width: 24px;
+  border-radius: 99px;
+  background: #D85A30;
+}
