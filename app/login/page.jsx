@@ -1,13 +1,13 @@
 "use client";
 import { useState, Suspense } from "react";
-import { signIn } from "../../lib/auth-client";
+import { authClient } from "../../lib/auth-client";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 
 function LoginForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const redirect = searchParams.get("redirect") || "/";
+  const redirect = searchParams.get("redirect") || "/my-profile";
   
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -20,24 +20,25 @@ function LoginForm() {
     setLoading(true);
 
     try {
-      const res = await signIn.email({ email, password });
+      const res = await authClient.signIn.email({ email, password });
 
-      if (res.error) {
+      if (res?.error) {
         setError(res.error.message || "Invalid email or password.");
         console.log("Login failed");
       } else {
         console.log("Welcome back!");
         router.push(redirect);
       }
-    } catch {
-      setError("Something went wrong. Please try again.");
+    } catch (err) {
+      console.log(err);
+      setError(err?.message || "Something went wrong. Please try again.");
     } finally {
       setLoading(false);
     }
   };
 
   const handleGoogle = async () => {
-    await signIn.social({
+    await authClient.signIn.social({
       provider: "google",
       callbackURL: redirect,
     });
@@ -45,7 +46,6 @@ function LoginForm() {
 
   return (
     <div style={{ minHeight: "100vh", background: "#FAEEDA", display: "flex", alignItems: "center", justifyContent: "center", padding: "30px 15px" }}>
-      
       <div
         className="animate__animated animate__fadeInUp"
         style={{
@@ -167,8 +167,7 @@ function LoginForm() {
         </button>
 
         <p style={{ textAlign: "center", fontSize: 13, color: "#777" }}>
-          Don&apos;t have an account?{" "}
-          <Link href="/register" style={{ color: "#D85A30", textDecoration: "none" }}>
+          Don’t have an account? <Link href="/register" style={{ color: "#D85A30", textDecoration: "none" }}>
             Register
           </Link>
         </p>
@@ -179,7 +178,7 @@ function LoginForm() {
 
 export default function LoginPage() {
   return (
-    <Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
       <LoginForm />
     </Suspense>
   );
